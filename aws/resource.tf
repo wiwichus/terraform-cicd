@@ -1,10 +1,10 @@
 variable "aws_region" {
   type    = string
-  default = "us-east-1"
+  default = "us-east-2"
 }
 
 resource "aws_s3_bucket" "demo" {
-  bucket = "cisco-raman-terraform-ci-demo-${random_id.suffix.hex}"
+  bucket = "luisarturod2-terraform-ci-demo-${random_id.suffix.hex}"
 
   tags = {
     Project = "Terraform-CI"
