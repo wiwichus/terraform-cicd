@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "cisco-raman-terraform-state-bucket"
+    bucket         = "luisarturod2-terraform-state-bucket"
     key            = "ci/azure/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "cisco-ramanterraform-state-lock"
+    region         = "us-east-2"
+    dynamodb_table = "luisarturod2-terraform-state-lock"
     encrypt        = true
   }
 }
